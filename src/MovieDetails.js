@@ -21,7 +21,7 @@ const MovieDetails = () => {
             // set details to state
             setMovie(res.data);
         })
-    }, []);
+    }, [movieID]);
 
     // deconstruct properties from the movie state
     const { original_title, tagline, overview, poster_path } = movie;
