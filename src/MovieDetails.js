@@ -16,7 +16,7 @@ const MovieDetails = () => {
         }).then((res) => {
             setMovie(res.data);
         })
-    }, []);
+    }, [movieID]);
 
     const { original_title, tagline, overview, poster_path } = movie;
     return (
